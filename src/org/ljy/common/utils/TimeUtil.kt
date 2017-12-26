@@ -25,16 +25,12 @@ class TimeUtil {
         /**
          * 获取当前毫秒时间戳
          */
-        @JvmStatic fun currentTimeMillis(): Long {
-            return System.currentTimeMillis();
-        }
+        @JvmStatic fun currentTimeMillis(): Long = System.currentTimeMillis();
 
         /**
          * 获取当前秒时间戳
          */
-        @JvmStatic fun currentTimeSeconds(): Long {
-            return System.currentTimeMillis()/1000;
-        }
+        @JvmStatic fun currentTimeSeconds(): Long = System.currentTimeMillis()/1000;
 
         /**
          * 获取当前日期
@@ -71,9 +67,7 @@ class TimeUtil {
         /**
          * 获取当前日期，格式为yyyy-MM-dd
          */
-        @JvmStatic fun getCurrentDate(): String {
-            return LocalDate.now().toString()
-        }
+        @JvmStatic fun getCurrentDate(): String = LocalDate.now().toString()
     }
 
 }

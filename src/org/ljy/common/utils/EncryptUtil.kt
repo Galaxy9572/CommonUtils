@@ -33,7 +33,7 @@ class EncryptUtil {
                 }
                 md5Sum = buf.toString()
             } catch (e: Exception) {
-                e.printStackTrace()
+                e.stackTrace
             }
             return md5Sum
         }

@@ -14,9 +14,7 @@ class StringUtil {
          * 验证字符串是否为Email格式
          */
         @JvmStatic
-        fun isEmail(email: String): Boolean {
-            return EMAIL_PATTERN.matcher(email).find()
-        }
+        fun isEmail(email: String): Boolean = EMAIL_PATTERN.matcher(email).find()
 
         /**
          * 将用下划线分割的字符串转为驼峰格式
